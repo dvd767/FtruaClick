@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FrutaClick - Facturación</title>
+  <link rel="stylesheet" href="estilos/estilos.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="pedidos.html">Pedidos</a></li>
+      <li><a href="facturacion.html" class="active">Facturación</a></li>
+      <li><a href="informes.html">Informes</a></li>
+    </ul>
+  </nav>
+<img src="imagenes/concepto-diseno-logotipo-alimentos-saludables_761413-8028.avif" alt="Logo de frtuasclick" width="100" height="100">
+  <div class="container">
+    <h1>Gestión de Facturación</h1>
+
+    <div class="form-section">
+      <h2>Generar Factura</h2>
+      <form id="formFactura">
+        <input type="text" placeholder="ID Pedido" required />
+        <input type="date" placeholder="Fecha Factura" required />
+        <input type="number" placeholder="Importe Total (€)" required />
+        <select required>
+          <option value="">Selecciona el método de pago</option>
+          <option value="transferencia">Transferencia</option>
+          <option value="tarjeta">Tarjeta</option>
+          <option value="efectivo">Efectivo</option>
+        </select>
+        <button type="submit">Generar Factura</button>
+      </form>
+    </div>
+
+    <div class="table-section">
+      <h2>Facturas Generadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>ID Pedido</th>
+            <th>Fecha</th>
+            <th>Importe</th>
+            <th>Pago</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>F001</td>
+            <td>P123</td>
+            <td>2025-05-10</td>
+            <td>47.50€</td>
+            <td>Tarjeta</td>
+            <td>
+              <button class="view-btn">Ver</button>
+              <button class="delete-btn">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+    <td>F002</td>
+    <td>P124</td>
+    <td>2025-05-11</td>
+    <td>22.80€</td>
+    <td>Efectivo</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F003</td>
+    <td>P125</td>
+    <td>2025-05-12</td>
+    <td>75.95€</td>
+    <td>Transferencia</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F004</td>
+    <td>P126</td>
+    <td>2025-05-12</td>
+    <td>15.50€</td>
+    <td>Tarjeta</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F005</td>
+    <td>P127</td>
+    <td>2025-05-13</td>
+    <td>38.20€</td>
+    <td>Paypal</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F006</td>
+    <td>P128</td>
+    <td>2025-05-13</td>
+    <td>51.10€</td>
+    <td>Efectivo</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F007</td>
+    <td>P129</td>
+    <td>2025-05-14</td>
+    <td>92.75€</td>
+    <td>Transferencia</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F008</td>
+    <td>P130</td>
+    <td>2025-05-14</td>
+    <td>29.99€</td>
+    <td>Tarjeta</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F009</td>
+    <td>P131</td>
+    <td>2025-05-15</td>
+    <td>63.40€</td>
+    <td>Paypal</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+<tr>
+    <td>F010</td>
+    <td>P132</td>
+    <td>2025-05-15</td>
+    <td>18.65€</td>
+    <td>Efectivo</td>
+    <td>
+        <button class="view-btn">Ver</button>
+        <button class="delete-btn">Eliminar</button>
+    </td>
+</tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
